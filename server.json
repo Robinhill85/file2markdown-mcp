@@ -1,0 +1,32 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "ai.file2markdown/file2markdown",
+  "title": "file2markdown",
+  "description": "Convert documents and web pages to clean, LLM-ready Markdown: PDFs, DOCX, XLSX, PPTX, EPUB, scanned files (OCR), and any public URL.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.file2markdown.ai/mcp",
+  "repository": {
+    "url": "https://github.com/Robinhill85/file2markdown-mcp",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://www.file2markdown.ai/logo-800.png",
+      "mimeType": "image/png"
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.file2markdown.ai/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional Pro API key as 'Bearer f2m_...' — removes the daily limit and enables OCR. Free tier works without it.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
