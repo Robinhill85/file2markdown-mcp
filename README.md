@@ -12,6 +12,7 @@ This is the official MCP server for [file2markdown.ai](https://www.file2markdown
 |---|---|
 | `convert_url` | Fetch a public URL (web page, PDF, Office doc, …) and return Markdown |
 | `convert_base64` | Convert file contents directly (programmatic clients) |
+| `convert_batch` | 2-10 documents in one call, URLs and files mixed, per-item results (Pro API key) |
 | `list_supported_formats` | Formats, per-tier limits, and what needs Pro |
 | `usage_status` | Your tier and remaining conversions today |
 
